@@ -40,7 +40,31 @@
         display: flex;
         justify-content: center;
       }
-      
+      @media(max-width:780px){
+        .container .rowproduct{
+          flex-direction: column;
+          margin: 0;
+        }
+        .container .rowproduct .col-3,
+        .container .rowproduct .col-9{
+          max-width: 100%;
+        }
+        .shooting-star .rowproduct>.div:nth-of-type(3){
+          order: 4;
+        }
+        .shooting-star .rowproduct>.div:nth-of-type(4){
+          order: 3;
+          text-align: start !important;
+        }
+        .map form{
+          position: unset !important;
+          padding: unset !important;         
+          top: unset !important;
+          right: unset !important;
+          width: 100%;
+        }
+        
+      }
 
     </style>
 </head>
@@ -311,12 +335,12 @@
 
 
   
-  <div class="container">
-    <div class="row">
-      <div class="col-3" style="padding:20px;">
+  <div class="container shooting-star">
+    <div class="row rowproduct">
+      <div class="col-3 div" style="padding:20px;">
         <img src="./img/H1.jpg" width="150px" style="border-radius: 50%;" alt="">     
       </div>
-      <div class="col-9" style="padding:20px;">        
+      <div class="col-9 div" style="padding:20px;">        
         <div class="row">
           <div class="col-12">
             <h4>Shooting Stars
@@ -333,7 +357,7 @@
           </div>
         </div>
       </div>
-      <div class="col-9" style="padding:20px">
+      <div class="col-9 div" style="padding:20px">
         <div class="row">
           <div class="col-12">
             <h4>The Catalyzer
@@ -350,13 +374,13 @@
           </div>
         </div>
       </div>
-      <div class="col-3" style="padding:20px;text-align:end;">
+      <div class="col-3 div" style="padding:20px;text-align:end;">
         <img src="./img/H1.jpg" width="150px" style="border-radius: 50%;" alt="" >
       </div>
-      <div class="col-3" style="padding:20px;">
+      <div class="col-3 div" style="padding:20px;">
         <img src="./img/H1.jpg" width="150px" style="border-radius: 50%;" alt="">     
       </div>
-      <div class="col-9" style="padding:20px">        
+      <div class="col-9 div" style="padding:20px">        
         <div class="row">
           <div class="col-12">
             <h4>The 400 Blows
@@ -478,7 +502,7 @@
 
  
 
-  <div class="container-fluid mapppppp" style="position: relative;">
+  <div class="container-fluid map" style="position: relative;">
     <div class="map" style="margin-top: 100px;">      
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d442130.5514755871!2d-90.16275326139586!3d30.032699596934652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8620a454b2118265%3A0xdb065be85e22d3b4!2z576O5ZyL6Lev5piT5pav5a6J6YKj5paw5aWn54i-6Imv!5e0!3m2!1szh-TW!2stw!4v1618191755578!5m2!1szh-TW!2stw" width="100%" height="700px" style="border:0;" allowfullscreen="" loading="lazy">      
       </iframe>
